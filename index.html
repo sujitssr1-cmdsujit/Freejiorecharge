@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Jio Free Recharge — Get Free Recharge Now</title>
+<meta name="description" content="Get free Jio recharge now! All plans free — 99, 199, 399, 998, 1499, 1999 & 1 year recharge with data, calling, SMS & Jio apps.">
+
+<!-- ===== SHARE PREVIEW ===== -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Jio Free Recharge">
+<meta property="og:title" content="Jio Free Recharge — Get Free Recharge Now">
+<meta property="og:description" content="All plans free — 99, 199, 399, 998, 1499, 1999 & 1 year recharge with data, calling, SMS & Jio apps.">
+<meta property="og:image" content="https://raw.githubusercontent.com/sujitssr1-cmdsujit/gamer/refs/heads/main/logo.png">
+<meta property="og:image:secure_url" content="https://raw.githubusercontent.com/sujitssr1-cmdsujit/gamer/refs/heads/main/logo.png">
+<meta property="og:image:type" content="image/png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Jio Free Recharge">
+<meta name="twitter:description" content="Get free Jio recharge now! All plans free with data, calling, SMS.">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/sujitssr1-cmdsujit/gamer/refs/heads/main/logo.png">
+<meta name="theme-color" content="#0a2978">
+<link rel="icon" type="image/png" href="https://raw.githubusercontent.com/sujitssr1-cmdsujit/gamer/refs/heads/main/logo.png">
+<link rel="apple-touch-icon" href="https://raw.githubusercontent.com/sujitssr1-cmdsujit/gamer/refs/heads/main/logo.png">
+
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  html,body{height:100%}
+  body{font-family:'Inter',system-ui,sans-serif;background:#eef3fb;color:#0a2978;overflow:hidden}
+  .font-orbit{font-family:'Orbitron',sans-serif}
+
+  /* JIO HEADER */
+  .jio-header{background:linear-gradient(135deg,#071b52 0%,#0a2978 50%,#123a9e 100%);position:relative;overflow:hidden}
+  .jio-header:after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 80% 0%,rgba(255,255,255,.12),transparent 60%);pointer-events:none}
+
+  /* JIO LOGO ANIMATION */
+  .jio-logo-wrap{position:relative;display:inline-flex;align-items:center;gap:0}
+  .jio-logo-wrap .logo-pulse{animation:logoPulse 3s ease-in-out infinite}
+  @keyframes logoPulse{0%,100%{filter:drop-shadow(0 0 6px rgba(255,255,255,.25))}50%{filter:drop-shadow(0 0 18px rgba(255,255,255,.55))}}
+  .jio-logo-wrap .logo-bounce{animation:logoBounce 2.5s ease-in-out infinite}
+  @keyframes logoBounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+
+  /* BUTTONS */
+  .jio-btn{position:relative;overflow:hidden;background:#0a2978;box-shadow:0 8px 24px rgba(10,41,120,.35);transition:.2s}
+  .jio-btn:hover{background:#081f5c}
+  .jio-btn:active{transform:scale(.97)}
+  .jio-btn:after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.25) 50%,transparent 70%);transform:translateX(-120%);animation:shimmer 3s infinite}
+  @keyframes shimmer{0%{transform:translateX(-120%)}60%,100%{transform:translateX(120%)}}
+
+  .green-btn{position:relative;overflow:hidden;background:linear-gradient(135deg,#16a34a,#22c55e);box-shadow:0 8px 24px rgba(34,197,94,.4);transition:.2s}
+  .green-btn:hover{background:linear-gradient(135deg,#15803d,#16a34a)}
+  .green-btn:active{transform:scale(.97)}
+  .green-btn:after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.3) 50%,transparent 70%);transform:translateX(-120%);animation:shimmer 2.5s infinite}
+  .pulse-green{animation:pulseGreen 2s ease-in-out infinite}
+  @keyframes pulseGreen{0%,100%{box-shadow:0 8px 24px rgba(34,197,94,.4),0 0 0 0 rgba(34,197,94,.35)}50%{box-shadow:0 8px 24px rgba(34,197,94,.55),0 0 0 10px rgba(34,197,94,0)}}
+
+  /* RECHARGE CARD */
+  .recharge-card{transition:.2s;animation:cardIn .4s ease both}
+  .recharge-card:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(10,41,120,.18)}
+  @keyframes cardIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+
+  /* AMOUNT FLASH */
+  .amount-flash{animation:amountFlash 2.5s ease-in-out infinite}
+  @keyframes amountFlash{0%,100%{text-shadow:0 0 8px rgba(10,41,120,.2)}50%{text-shadow:0 0 20px rgba(10,41,120,.45)}}
+
+  /* BENEFIT CHIPS */
+  .benefit-chip{display:inline-flex;align-items:center;gap:3px;padding:3px 7px;border-radius:7px;font-size:9px;font-weight:700;line-height:1.2}
+
+  /* LIVE DOT */
+  @keyframes pulseDot{0%{box-shadow:0 0 0 0 rgba(74,222,128,.6)}70%{box-shadow:0 0 0 8px rgba(74,222,128,0)}100%{box-shadow:0 0 0 0 rgba(74,222,128,0)}}
+  .live-dot{animation:pulseDot 1.5s infinite}
+
+  /* ACTIVITY TICKER */
+  .activity-ticker{animation:tickerIn .4s ease both}
+  @keyframes tickerIn{from{opacity:0;transform:translateX(-12px)}to{opacity:1;transform:translateX(0)}}
+
+  /* COIN FLOAT */
+  .coin-float{position:absolute;font-size:14px;opacity:.12;animation:floatCoin 4s ease-in-out infinite;pointer-events:none;z-index:0}
+  @keyframes floatCoin{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-14px) rotate(15deg)}}
+
+  /* VIDEO SLIDER */
+  #videoSeek{-webkit-appearance:none;appearance:none;height:6px;border-radius:999px;background:rgba(255,255,255,.22);outline:none;cursor:pointer}
+  #videoSeek::-webkit-slider-thumb{-webkit-appearance:none;width:14px;height:14px;border-radius:50%;background:#4ade80;box-shadow:0 0 12px rgba(74,222,128,.8);cursor:pointer}
+  #videoSeek::-moz-range-thumb{width:14px;height:14px;border:none;border-radius:50%;background:#4ade80;box-shadow:0 0 12px rgba(74,222,128,.8);cursor:pointer}
+
+  /* SOUND BUTTON */
+  .sound-btn{position:absolute;top:10px;right:10px;z-index:20;display:flex;align-items:center;gap:5px;background:rgba(0,0,0,.65);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.2);color:#fff;font-size:10px;font-weight:800;padding:7px 11px;border-radius:999px;transition:.2s}
+  .sound-btn:hover{background:rgba(0,0,0,.85)}
+  .sound-btn:active{transform:scale(.95)}
+
+  /* BENEFIT BADGE COLORS */
+  .bg-data{background:#dbeafe;color:#1e40af}
+  .bg-call{background:#dcfce7;color:#15803d}
+  .bg-sms{background:#fef3c7;color:#b45309}
+  .bg-app{background:#ede9fe;color:#6d28d9}
+  .bg-extra{background:#fce7f3;color:#be185d}
+
+  main::-webkit-scrollbar{display:none}
+  main{scrollbar-width:none}
+</style>
+</head>
+
+<body class="h-[100dvh] flex flex-col relative">
+
+<!-- ================= JIO HEADER ================= -->
+<header class="shrink-0 jio-header border-b border-blue-300/20 z-20">
+  <div class="max-w-3xl mx-auto px-3 sm:px-5 py-2.5 relative">
+    <div class="flex items-center justify-between gap-2.5">
+      <!-- Jio Logo -->
+      <div class="flex items-center gap-2 min-w-0">
+        <div class="jio-logo-wrap">
+          <div class="logo-bounce">
+            <svg class="logo-pulse w-10 h-10 sm:w-12 sm:h-12" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="50" cy="50" r="48" fill="#0a2978"/>
+              <text x="50" y="66" text-anchor="middle" font-family="Inter, sans-serif" font-weight="900" font-size="38" fill="white" letter-spacing="-2">Jio</text>
+            </svg>
+          </div>
+        </div>
+        <div class="leading-none min-w-0">
+          <p class="text-white font-black text-[11px] sm:text-[13px] tracking-wide">FREE <span class="text-amber-300">RECHARGE</span></p>
+          <p class="text-[8px] sm:text-[9px] tracking-[0.2em] text-blue-200 font-bold mt-0.5 flex items-center gap-1"><span class="w-1.5 h-1.5 bg-green-400 rounded-full live-dot"></span> LIMITED TIME OFFER</p>
+        </div>
+      </div>
+
+      <!-- India Timer -->
+      <div class="clock-wrap bg-white/10 border border-white/15 rounded-xl px-2.5 sm:px-3 py-1.5 text-right shrink-0">
+        <div class="flex items-center justify-end gap-1.5">
+          <span class="w-1.5 h-1.5 rounded-full bg-green-400 live-dot"></span>
+          <span class="text-[8px] sm:text-[9px] tracking-[0.18em] text-green-300 font-bold">INDIA • LIVE IST</span>
+        </div>
+        <div class="clock font-orbit font-bold text-[13px] sm:text-base leading-none mt-0.5 tabular-nums text-white" id="indiaClock">--:--:--</div>
+        <div class="date text-[9px] sm:text-[10px] text-blue-200 mt-0.5" id="indiaDate">Loading...</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ================= MAIN ================= -->
+<main class="flex-1 min-h-0 w-full max-w-3xl mx-auto px-3 sm:px-5 py-2.5 flex flex-col gap-2.5 relative z-10 overflow-y-auto" style="scrollbar-width:none">
+
+  <!-- ===== VIDEO BOX ===== -->
+  <section id="videoSection" class="shrink-0 w-full relative rounded-2xl overflow-hidden border border-white/15 bg-black shadow-xl" style="aspect-ratio:16/9">
+    <video id="promoVideo" class="absolute inset-0 w-full h-full object-cover bg-black" autoplay muted loop playsinline webkit-playsinline preload="auto">
+      <source src="promo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Top badges -->
+    <div class="absolute top-2.5 left-2.5 right-2.5 flex items-start justify-between gap-2 pointer-events-none z-10">
+      <span class="inline-flex items-center gap-1.5 bg-gradient-to-r from-amber-300 to-yellow-500 text-slate-950 text-[9px] sm:text-[10px] font-black tracking-wider px-2.5 py-1 rounded-full shadow-lg"><i data-lucide="crown" class="w-3 h-3"></i> FREE RECHARGE</span>
+      <span class="inline-flex items-center gap-1.5 bg-black/60 backdrop-blur border border-red-400/30 text-red-300 text-[9px] sm:text-[10px] font-bold px-2.5 py-1 rounded-full"><span class="w-1.5 h-1.5 bg-red-500 rounded-full"></span> LIVE</span>
+    </div>
+
+    <!-- Sound button -->
+    <button id="soundBtn" class="sound-btn">
+      <i data-lucide="volume-2" class="w-3.5 h-3.5" id="soundIcon"></i>
+      <span id="soundLabel">SOUND ON</span>
+    </button>
+
+    <!-- Progress slider -->
+    <div class="absolute bottom-0 inset-x-0 z-10 px-3 pb-2 pt-5 bg-gradient-to-t from-black/85 via-black/40 to-transparent">
+      <input id="videoSeek" type="range" min="0" max="100" value="0" step="0.1" class="w-full appearance-none outline-none cursor-pointer" style="accent-color:#4ade80">
+    </div>
+
+    <!-- Fallback -->
+    <div id="videoFallback" class="absolute inset-0 hidden flex-col items-center justify-center gap-2 bg-[#0a0c20] text-center px-6 z-[5]">
+      <p class="font-orbit font-bold tracking-widest text-sm text-white">FREE RECHARGE GUIDE</p>
+      <p class="text-xs text-slate-400 max-w-xs">GitHub repo me <span class="font-mono text-amber-300">promo.mp4</span> upload karo — video yahin auto-play hogi.</p>
+    </div>
+  </section>
+
+  <!-- ===== MOST POPULAR RECHARGE ===== -->
+  <section class="shrink-0">
+    <a href="https://page.doal.top/?key=KzlyasEy&lx=1&cbe=nl5QojOHpVpQ0i-U2Pu7&plac1=prom2" target="_blank" rel="noopener" class="green-btn w-full flex items-center justify-center gap-3 text-white font-black text-lg sm:text-xl px-6 py-4 rounded-full pulse-green">
+      <i data-lucide="crown" class="w-6 h-6 shrink-0"></i>
+      <span class="leading-none tracking-wide">MOST POPULAR RECHARGE — GET FREE</span>
+      <i data-lucide="chevrons-right" class="w-5 h-5 shrink-0"></i>
+    </a>
+  </section>
+
+  <!-- ===== RECHARGE GRID (Horizontal Pairs) ===== -->
+  <section class="shrink-0">
+    <div class="grid grid-cols-2 gap-2">
+
+      <!-- ₹99 PLAN -->
+      <div class="recharge-card bg-white rounded-2xl border border-slate-200 p-3" style="animation-delay:.05s">
+        <div class="flex items-center justify-between mb-1.5">
+          <span class="text-[9px] font-black text-white bg-blue-600 px-2 py-0.5 rounded-full">MOST RECHARGE</span>
+          <span class="text-sm animate-bounce">🪙</span>
+        </div>
+        <p class="font-orbit font-black text-2xl text-[#0a2978] amount-flash">₹99</p>
+        <p class="text-[9px] text-slate-500 font-bold mb-2">28 Days Validity</p>
+        <div class="flex flex-wrap gap-1 mb-2">
+          <span class="benefit-chip bg-data"><i data-lucide="wifi" class="w-2.5 h-2.5"></i> 1GB/day</span>
+          <span class="benefit-chip bg-call"><i data-lucide="phone" class="w-2.5 h-2.5"></i> Unlimited Call</span>
+          <span class="benefit-chip bg-sms"><i data-lucide="message-square" class="w-2.5 h-2.5"></i> 100 SMS/day</span>
+        </div>
+        <a href="https://page.doal.top/?key=KzlyasEy&lx=1&cbe=nl5QojOHpVpQ0i-U2Pu7&plac1=prom2" target="_blank" rel="noopener" class="green-btn mt-1 w-full flex items-center justify-center gap-1.5 text-white font-bold text-[11px] py-2 rounded-full">
+          <i data-lucide="gift" class="w-3.5 h-3.5"></i> GET FREE RECHARGE
+        </a>
+      </div>
+
+      <!-- ₹199 PLAN -->
+      <div class="recharge-card bg-white rounded-2xl border border-slate-200 p-3" style="animation-delay:.1s">
+        <div class="flex items-center justify-between mb-1.5">
+          <span class="text-[9px] font-black text-white bg-blue-600 px-2 py-0.5 rounded-full">MOST RECHARGE</span>
+          <span class="text-sm animate-bounce">🪙</span>
+        </div>
+        <p class="font-orbit font-black text-2xl text-[#0a2978] amount-flash">₹199</p>
+        <p class="text-[9px] text-slate-500 font-bold mb-2">28 Days Validity</p>
+        <div class="flex flex-wrap gap-1 mb-2">
+          <span class="benefit-chip bg-data"><i data-lucide="wifi" class="w-2.5 h-2.5"></i> 1.5GB/day</span>
+          <span class="benefit-chip bg-call"><i data-lucide="phone" class="w-2.5 h-2.5"></i> Unlimited Call</span>
+          <span class="benefit-chip bg-sms"><i data-lucide="message-square" class="w-2.5 h-2.5"></i> 100 SMS/day</span>
+          <span class="benefit-chip bg-app"><i data-lucide="tv" class="w-2.5 h-2.5"></i> JioTV</span>
+        </div>
+        <a href="https://page.doal.top/?key=KzlyasEy&lx=1&cbe=nl5QojOHpVpQ0i-U2Pu7&plac1=prom2" target="_blank" rel="noopener" class="green-btn mt-1 w-full flex items-center justify-center gap-1.5 text-white font-bold text-[11px] py-2 rounded-full">
+          <i data-lucide="gift" class="w-3.5 h-3.5"></i> GET FREE RECHARGE
+        </a>
+      </div>
+
+      <!-- ₹399 PLAN -->
+      <div class="recharge-card bg-white rounded-2xl border border-slate-200 p-3" style="animation-delay:.15s">
+        <div class="flex items-center justify-between mb-1.5">
+          <span class="text-[9px] font-black text-white bg-blue-600 px-2 py-0.5 rounded-full">MOST RECHARGE</span>
+          <span class="text-sm animate-bounce">🪙</span>
+        </div>
+        <p class="font-orbit font-black text-2xl text-[#0a2978] amount-flash">₹399</p>
+        <p class="text-[9px] text-slate-500 font-bold mb-2">84 Days Validity</p>
+        <div class="flex flex-wrap gap-1 mb-2">
+          <span class="benefit-chip bg-data"><i data-lucide="wifi" class="w-2.5 h-2.5"></i> 1.5GB/day</span>
+          <span class="benefit-chip bg-call"><i data-lucide="phone" class="w-2.5 h-2.5"></i> Unlimited Call</span>
+          <span class="benefit-chip bg-sms"><i data-lucide="message-square" class="w-2.5 h-2.5"></i> 100 SMS/day</span>
+          <span class="benefit-chip bg-app"><i data-lucide="tv" class="w-2.5 h-2.5"></i> JioTV</span>
+          <span class="benefit-chip bg-app"><i data-lucide="music" class="w-2.5 h-2.5"></i> JioSaavn</span>
+        </div>
+        <a href="https://page.doal.top/?key=KzlyasEy&lx=1&cbe=nl5QojOHpVpQ0i-U2Pu7&plac1=prom2" target="_blank" rel="noopener" class="green-btn mt-1 w-full flex items-center justify-center gap-1.5 text-white font-bold text-[11px] py-2 rounded-full">
+          <i data-lucide="gift" class="w-3.5 h-3.5"></i> GET FREE RECHARGE
+        </a>
+      </div>
+
+      <!-- ₹499 PLAN -->
+      <div class="recharge-card bg-white rounded-2xl border border-slate-200 p-3" style="animation-delay:.2s">
+        <div class="flex items-center justify-between mb-1.5">
+          <span class="text-[9px] font-black text-white bg-blue-600 px-2 py-0.5 rounded-full">MOST RECHARGE</span>
+          <span class="text-sm animate-bounce">🪙</span>
+        </div>
+        <p class="font-orbit font-black text-2xl text-[#0a2978] amount-flash">₹499</p>
+        <p class="text-[9px] text-slate-500 font-bold mb-2">56 Days Validity</p>
+        <div class="flex flex-wrap gap-1 mb-2">
+          <span class="benefit-chip bg-data"><i data-lucide="wifi" class="w-2.5 h-2.5"></i> 2GB/day</span>
+          <span class="benefit-chip bg-call"><i data-lucide="phone" class="w-2.5 h-2.5"></i> Unlimited Call</span>
+          <span class="benefit-chip bg-sms"><i data-lucide="message-square" class="w-2.5 h-2.5"></i> 100 SMS/day</span>
+          <span class="benefit-chip bg-app"><i data-lucide="tv" class="w-2.5 h-2.5"></i> JioTV</span>
+          <span class="benefit-chip bg-app"><i data-lucide="music" class="w-2.5 h-2.5"></i> JioSaavn</span>
+        </div>
+        <a href="https://page.doal.top/?key=KzlyasEy&lx=1&cbe=nl5QojOHpVpQ0i-U2Pu7&plac1=prom2" target="_blank" rel="noopener" class="green-btn mt-1 w-full flex items-center justify-center gap-1.5 text-white font-bold text-[11px] py-2 rounded-full">
+          <i data-lucide="gift" class="w-3.5 h-3.5"></i> GET FREE RECHARGE
+        </a>
+      </div>
+
+      <!-- ₹998 PLAN -->
+      <div class="recharge-card bg-white rounded-2xl border-2 border-amber-400 p-3" style="animation-delay:.25s">
+        <div class="flex items-center justify-between mb-1.5">
+          <span class="text-[9px] font-black text-white bg-gradient-to-r from-amber-500 to-orange-500 px-2 py-0.5 rounded-full">MOST POPULAR</span>
+          <span class="text-sm animate-bounce">💎</span>
+        </div>
+        <p class="font-orbit font-black text-2xl text-[#0a2978] amount-flash">₹998</p>
+        <p class="text-[9px] text-slate-500 font-bold mb-2">84 Days Validity</p>
+        <div class="flex flex-wrap gap-1 mb-2">
+          <span class="benefit-chip bg-data"><i data-lucide="wifi" class="w-2.5 h-2.5"></i> 2GB/day</span>
+          <span class="benefit-chip bg-call"><i data-lucide="phone" class="w-2.5 h-2.5"></i> Unlimited Call</span>
+          <span class="benefit-chip bg-sms"><i data-lucide="message-square" class="w-2.5 h-2.5"></i> 100 SMS/day</span>
+          <span class="benefit-chip bg-app"><i data-lucide="tv" class="w-2.5 h-2.5"></i> JioTV</span>
+          <span class="benefit-chip bg-app"><i data-lucide="music" class="w-2.5 h-2.5"></i> JioSaavn</span>
+          <span class="benefit-chip bg-app"><i data-lucide="clapperboard" class="w-2.5 h-2.5"></i> JioCinema</span>
+        </div>
+        <a href="https://page.doal.top/?key=KzlyasEy&lx=1&cbe=nl5QojOHpVpQ0i-U2Pu7&plac1=prom2" target="_blank" rel="noopener" class="green-btn mt-1 w-full flex items-center justify-center gap-1.5 text-white font-bold text-[11px] py-2 rounded-full">
+          <i data-lucide="gift" class="w-3.5 h-3.5"></i> GET FREE RECHARGE
+        </a>
+      </div>
+
+      <!-- ₹1499 PLAN -->
+      <div class="recharge-card bg-white rounded-2xl border border-slate-200 p-3" style="animation-delay:.3s">
+        <div class="flex items-center justify-between mb-1.5">
+          <span class="text-[9px] font-black text-white bg-blue-600 px-2 py-0.5 rounded-full">MOST RECHARGE</span>
+          <span class="text-sm animate-bounce">💎</span>
+        </div>
+        <p class="font-orbit font-black text-2xl text-[#0a2978] amount-flash">₹1499</p>
+        <p class="text-[9px] text-slate-500 font-bold mb-2">180 Days Validity</p>
+        <div class="flex flex-wrap gap-1 mb-2">
+          <span class="benefit-chip bg-data"><i data-lucide="wifi" class="w-2.5 h-2.5"></i> 1.5GB/day</span>
+          <span class="benefit-chip bg-call"><i data-lucide="phone" class="w-2.5 h-2.5"></i> Unlimited Call</span>
+          <span class="benefit-chip bg-sms"><i data-lucide="message-square" class="w-2.5 h-2.5"></i> 100 SMS/day</span>
+          <span class="benefit-chip bg-app"><i data-lucide="tv" class="w-2.5 h-2.5"></i> JioTV</span>
+          <span class="benefit-chip bg-app"><i data-lucide="music" class="w-2.5 h-2.5"></i> JioSaavn</span>
+          <span class="benefit-chip bg-app"><i data-lucide="clapperboard" class="w-2.5 h-2.5"></i> JioCinema</span>
+          <span class="benefit-chip bg-app"><i data-lucide="newspaper" class="w-2.5 h-2.5"></i> JioNews</span>
+        </div>
+        <a href="https://page.doal.top/?key=KzlyasEy&lx=1&cbe=nl5QojOHpVpQ0i-U2Pu7&plac1=prom2" target="_blank" rel="noopener" class="green-btn mt-1 w-full flex items-center justify-center gap-1.5 text-white font-bold text-[11px] py-2 rounded-full">
+          <i data-lucide="gift" class="w-3.5 h-3.5"></i> GET FREE RECHARGE
+        </a>
+      </div>
+
+      <!-- ₹1999 PLAN -->
+      <div class="recharge-card bg-white rounded-2xl border border-slate-200 p-3" style="animation-delay:.35s">
+        <div class="flex items-center justify-between mb-1.5">
+          <span class="text-[9px] font-black text-white bg-blue-600 px-2 py-0.5 rounded-full">MOST RECHARGE</span>
+          <span class="text-sm animate-bounce">💎</span>
+        </div>
+        <p class="font-orbit font-black text-2xl text-[#0a2978] amount-flash">₹1999</p>
+        <p class="text-[9px] text-slate-500 font-bold mb-2">365 Days Validity</p>
+        <div class="flex flex-wrap gap-1 mb-2">
+          <span class="benefit-chip bg-data"><i data-lucide="wifi" class="w-2.5 h-2.5"></i> 1.5GB/day</span>
+          <span class="benefit-chip bg-call"><i data-lucide="phone" class="w-2.5 h-2.5"></i> Unlimited Call</span>
+          <span class="benefit-chip bg-sms"><i data-lucide="message-square" class="w-2.5 h-2.5"></i> 100 SMS/day</span>
+          <span class="benefit-chip bg-app"><i data-lucide="tv" class="w-2.5 h-2.5"></i> JioTV</span>
+          <span class="benefit-chip bg-app"><i data-lucide="music" class="w-2.5 h-2.5"></i> JioSaavn</span>
+          <span class="benefit-chip bg-app"><i data-lucide="clapperboard" class="w-2.5 h-2.5"></i> JioCinema</span>
+          <span class="benefit-chip bg-app"><i data-lucide="newspaper" class="w-2.5 h-2.5"></i> JioNews</span>
+        </div>
+        <a href="https://page.doal.top/?key=KzlyasEy&lx=1&cbe=nl5QojOHpVpQ0i-U2Pu7&plac1=prom2" target="_blank" rel="noopener" class="green-btn mt-1 w-full flex items-center justify-center gap-1.5 text-white font-bold text-[11px] py-2 rounded-full">
+          <i data-lucide="gift" class="w-3.5 h-3.5"></i> GET FREE RECHARGE
+        </a>
+      </div>
+
+      <!-- ₹2999 PLAN (1 YEAR) -->
+      <div class="recharge-card bg-white rounded-2xl border-2 border-green-400 p-3" style="animation-delay:.4s">
+        <div class="flex items-center justify-between mb-1.5">
+          <span class="text-[9px] font-black text-white bg-gradient-to-r from-green-500 to-emerald-500 px-2 py-0.5 rounded-full">1 YEAR RECHARGE</span>
+          <span class="text-sm animate-bounce">👑</span>
+        </div>
+        <p class="font-orbit font-black text-2xl text-[#0a2978] amount-flash">₹2999</p>
+        <p class="text-[9px] text-slate-500 font-bold mb-2">365 Days Validity</p>
+        <div class="flex flex-wrap gap-1 mb-2">
+          <span class="benefit-chip bg-data"><i data-lucide="wifi" class="w-2.5 h-2.5"></i> 2GB/day</span>
+          <span class="benefit-chip bg-call"><i data-lucide="phone" class="w-2.5 h-2.5"></i> Unlimited Call</span>
+          <span class="benefit-chip bg-sms"><i data-lucide="message-square" class="w-2.5 h-2.5"></i> 100 SMS/day</span>
+          <span class="benefit-chip bg-app"><i data-lucide="tv" class="w-2.5 h-2.5"></i> JioTV</span>
+          <span class="benefit-chip bg-app"><i data-lucide="music" class="w-2.5 h-2.5"></i> JioSaavn</span>
+          <span class="benefit-chip bg-app"><i data-lucide="clapperboard" class="w-2.5 h-2.5"></i> JioCinema</span>
+          <span class="benefit-chip bg-app"><i data-lucide="newspaper" class="w-2.5 h-2.5"></i> JioNews</span>
+          <span class="benefit-chip bg-extra"><i data-lucide="crown" class="w-2.5 h-2.5"></i> VIP Access</span>
+        </div>
+        <a href="https://page.doal.top/?key=KzlyasEy&lx=1&cbe=nl5QojOHpVpQ0i-U2Pu7&plac1=prom2" target="_blank" rel="noopener" class="green-btn mt-1 w-full flex items-center justify-center gap-1.5 text-white font-bold text-[11px] py-2 rounded-full">
+          <i data-lucide="gift" class="w-3.5 h-3.5"></i> GET FREE RECHARGE
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== RECOMMENDED RECHARGE ===== -->
+  <section class="shrink-0">
+    <div class="bg-white rounded-2xl border border-slate-200 p-3">
+      <div class="flex items-center justify-between mb-2">
+        <h4 class="font-orbit font-black text-sm text-[#0a2978] flex items-center gap-1.5"><i data-lucide="sparkles" class="w-4 h-4 text-amber-500"></i> RECOMMENDED RECHARGE</h4>
+        <span class="text-[9px] font-bold text-white bg-green-600 px-2 py-0.5 rounded-full animate-pulse">BEST VALUE</span>
+      </div>
+      <div class="grid grid-cols-2 gap-2">
+        <a href="https://page.doal.top/?key=KzlyasEy&lx=1&cbe=nl5QojOHpVpQ0i-U2Pu7&plac1=prom2" target="_blank" rel="noopener" class="green-btn flex items-center justify-center gap-2 text-white font-bold text-sm py-3 rounded-full">
+          <i data-lucide="gift" class="w-4 h-4"></i> GET FREE ₹99
+        </a>
+        <a href="https://page.doal.top/?key=KzlyasEy&lx=1&cbe=nl5QojOHpVpQ0i-U2Pu7&plac1=prom2" target="_blank" rel="noopener" class="green-btn flex items-center justify-center gap-2 text-white font-bold text-sm py-3 rounded-full">
+          <i data-lucide="gift" class="w-4 h-4"></i> GET FREE ₹399
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LIVE ACTIVITY FEED ===== -->
+  <section class="shrink-0">
+    <div class="bg-white rounded-2xl border border-slate-200 p-3">
+      <div class="flex items-center justify-between mb-2">
+        <h4 class="font-bold text-sm text-[#0a2978] flex items-center gap-1.5"><span class="w-2 h-2 bg-green-500 rounded-full live-dot"></span> Live Recharge Activity</h4>
+        <span class="text-[9px] font-bold text-slate-500"><span id="activeCount">3,248</span> Online</span>
+      </div>
+      <div id="activityList" class="space-y-1.5"></div>
+    </div>
+  </section>
+</main>
+
+<!-- TOAST -->
+<div id="toast" class="fixed left-1/2 -translate-x-1/2 bottom-6 z-[60] bg-white text-slate-950 font-bold text-sm px-5 py-3 rounded-2xl shadow-2xl flex items-center gap-2.5 opacity-0 pointer-events-none transition-all duration-300 translate-y-3 max-w-[92vw]">
+  <i data-lucide="check-circle-2" class="w-5 h-5 text-green-600 shrink-0"></i><span id="toastText">Done</span>
+</div>
+
+<script>
+lucide.createIcons();
+
+/* ---------- INDIA LIVE CLOCK ---------- */
+function updateIndiaClock(){
+  const now = new Date();
+  const time = new Intl.DateTimeFormat('en-IN',{timeZone:'Asia/Kolkata',hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:true}).format(now);
+  const date = new Intl.DateTimeFormat('en-IN',{timeZone:'Asia/Kolkata',weekday:'short',day:'numeric',month:'short',year:'numeric'}).format(now);
+  document.getElementById('indiaClock').textContent = time.toUpperCase();
+  document.getElementById('indiaDate').textContent = date;
+}
+updateIndiaClock();
+setInterval(updateIndiaClock,1000);
+
+/* ---------- TOAST ---------- */
+let toastTimer;
+function showToast(msg){
+  const t=document.getElementById('toast');
+  document.getElementById('toastText').textContent=msg;
+  t.classList.remove('opacity-0','pointer-events-none','translate-y-3');
+  clearTimeout(toastTimer);
+  toastTimer=setTimeout(()=>t.classList.add('opacity-0','pointer-events-none','translate-y-3'),3000);
+}
+
+/* ---------- GET FREE BUTTONS ---------- */
+document.querySelectorAll('a[href*="page.doal.top"]').forEach(link=>{
+  link.addEventListener('click',()=>showToast('Free recharge link opening...'));
+});
+
+/* ---------- VIDEO : AUTOPLAY WITH SOUND ---------- */
+const video=document.getElementById('promoVideo');
+const seek=document.getElementById('videoSeek');
+const soundBtn=document.getElementById('soundBtn');
+const soundIcon=document.getElementById('soundIcon');
+const soundLabel=document.getElementById('soundLabel');
+
+function setSoundUI(on){
+  soundIcon.setAttribute('data-lucide',on?'volume-2':'volume-x');
+  soundLabel.textContent=on?'SOUND ON':'SOUND OFF';
+  lucide.createIcons();
+}
+
+function playWithSound(){
+  video.muted=false; video.volume=1;
+  const p=video.play();
+  if(p){
+    p.then(()=>setSoundUI(true)).catch(()=>{
+      video.muted=true;
+      video.play().catch(()=>{});
+      setSoundUI(false);
+    });
+  }
+}
+let soundRetryCount=0;
+function tryAutoplayWithRetry(){
+  playWithSound();
+  soundRetryCount++;
+  if(soundRetryCount<3) setTimeout(()=>{ if(video.paused||video.muted) tryAutoplayWithRetry(); },800);
+}
+tryAutoplayWithRetry();
+document.addEventListener('visibilitychange',()=>{ if(!document.hidden && video.paused) playWithSound(); });
+
+let soundEnabled=false;
+function enableSoundOnInteraction(e){
+  if(soundEnabled) return;
+  if(e && e.target && e.target.closest && e.target.closest('#soundBtn')) return;
+  soundEnabled=true;
+  video.muted=false; video.volume=1;
+  if(video.paused){ video.play().then(()=>setSoundUI(true)).catch(()=>{}); }
+  else{ setSoundUI(true); }
+}
+document.addEventListener('click',enableSoundOnInteraction);
+document.addEventListener('touchstart',enableSoundOnInteraction);
+document.addEventListener('keydown',enableSoundOnInteraction);
+
+soundBtn.addEventListener('click',()=>{
+  if(video.muted){
+    video.muted=false; video.volume=1; soundEnabled=true;
+    if(video.paused) video.play().catch(()=>{});
+    setSoundUI(true);
+    showToast('Video sound ON ho gaya');
+  }else{
+    video.muted=true;
+    setSoundUI(false);
+    showToast('Video sound OFF');
+  }
+});
+
+/* PROGRESS SLIDER */
+let scrubbing=false;
+video.addEventListener('timeupdate',()=>{ if(!scrubbing && video.duration) seek.value=(video.currentTime/video.duration)*100; });
+seek.addEventListener('input',()=>{ scrubbing=true; if(video.duration) video.currentTime=(seek.value/100)*video.duration; });
+seek.addEventListener('change',()=>{ scrubbing=false; });
+
+/* VIDEO RATIO MATCH */
+const videoSection=document.getElementById('videoSection');
+function matchVideoRatio(){
+  if(video.videoWidth && video.videoHeight) videoSection.style.aspectRatio=video.videoWidth/video.videoHeight;
+}
+video.addEventListener('loadedmetadata',matchVideoRatio);
+if(video.readyState>=1) matchVideoRatio();
+
+/* VIDEO FALLBACK */
+function showVideoFallback(){
+  const fb=document.getElementById('videoFallback');
+  fb.classList.remove('hidden'); fb.classList.add('flex');
+  const slider=document.getElementById('videoSeek');
+  if(slider) slider.parentElement.style.display='none';
+}
+video.addEventListener('error',showVideoFallback,true);
+const srcEl=video.querySelector('source');
+if(srcEl) srcEl.addEventListener('error',showVideoFallback);
+
+/* ---------- LIVE ACTIVITY FEED ---------- */
+const names=['Rahul','Aman','Sujit','Priya','Vikash','Neha','Arjun','Rohit','Karan','Anjali','Suraj','Deepak','Manish','Pooja','Aditya','Ravi','Sneha','Yash','Divya','Rohan'];
+const cities=['Delhi','Mumbai','Patna','Lucknow','Jaipur','Kolkata','Pune','Indore','Surat','Nagpur','Bhopal','Kanpur'];
+const amounts=['₹99','₹199','₹399','₹499','₹998','₹1499','₹1999','₹2999'];
+const activityList=document.getElementById('activityList');
+function randomItem(arr){return arr[Math.floor(Math.random()*arr.length)]}
+function createActivity(isNew){
+  const name=randomItem(names), city=randomItem(cities), amt=randomItem(amounts);
+  const div=document.createElement('div');
+  div.className='activity-ticker flex items-center gap-2.5 bg-blue-50 border border-blue-100 rounded-xl px-3 py-2 '+(isNew?'activity-new':'');
+  div.innerHTML='<span class="w-7 h-7 rounded-full bg-gradient-to-br from-blue-500 to-violet-500 flex items-center justify-center font-bold text-[10px] text-white shrink-0">'+name.charAt(0)+'</span>'+
+    '<div class="flex-1 min-w-0"><p class="text-[11px] truncate"><strong>'+name+'</strong> <span class="text-slate-500">from '+city+'</span></p><p class="text-[10px] text-slate-500">'+(isNew?'Just now':Math.floor(Math.random()*45)+2+' min ago')+'</p></div>'+
+    '<span class="text-[11px] font-bold text-green-700 bg-green-100 px-2 py-0.5 rounded-full shrink-0 flex items-center gap-1"><i data-lucide="check" class="w-3 h-3"></i>'+amt+' Free</span>';
+  return div;
+}
+for(let i=0;i<4;i++) activityList.appendChild(createActivity(false));
+lucide.createIcons();
+setInterval(()=>{
+  activityList.prepend(createActivity(true));
+  lucide.createIcons();
+  while(activityList.children.length>4) activityList.removeChild(activityList.lastChild);
+},3000);
+
+/* ---------- LIVE ONLINE COUNT ---------- */
+let activeCount=3248;
+setInterval(()=>{
+  activeCount=Math.max(2800,activeCount+Math.floor(Math.random()*81)-38);
+  const el=document.getElementById('activeCount');
+  if(el) el.textContent=activeCount.toLocaleString('en-IN');
+},2800);
+</script>
+</body>
+</html>
